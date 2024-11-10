@@ -15,7 +15,17 @@ class MovieService
         $this->castService = $castService;
     }
 
-    public function getMovies($request){
+    public function getAdminMovies($request){
+        $perPage = $request->input('perPage', 10);
+
+        $movies = Movie::paginate($perPage);
+
+        return $movies->appends([
+            'perPage' => $perPage,
+        ]);
+    }
+
+    public function getClientMovies($request){
         $perPage = $request->input('perPage', 10);
 
         $movies = Movie::where('status', 1)->paginate($perPage);

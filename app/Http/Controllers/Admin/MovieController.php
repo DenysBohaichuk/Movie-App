@@ -22,7 +22,7 @@ class MovieController extends \App\Http\Controllers\Base\MovieController
 
     public function index(Request $request)
     {
-        $movies = $this->service->getMovies($request);
+        $movies = $this->service->getAdminMovies($request);
         return view($this->viewPrefix . 'movies.index', compact('movies'));
     }
 

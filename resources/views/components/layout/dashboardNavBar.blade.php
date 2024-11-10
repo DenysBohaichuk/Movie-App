@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('admin.dashboard') }}">
+                    <a href="{{ route('welcome') }}">
                         <x-logo.application-logo class="block h-9 w-auto fill-current text-gray-800" />
                     </a>
                 </div>
@@ -64,11 +64,11 @@
 
                     <x-slot name="content">
                         <x-dropdowns.dropdown-link :href="route('profile.edit')">
-                            {{ __('Profile') }}
+                            {{ __('admin.profile') }}
                         </x-dropdowns.dropdown-link>
 
                         <x-dropdowns.dropdown-link :href="route('client.movies.index')">
-                            {{ __('Movies') }}
+                            {{ __('admin.movies') }}
                         </x-dropdowns.dropdown-link>
 
                         <!-- Authentication -->
@@ -78,7 +78,7 @@
                             <x-dropdowns.dropdown-link :href="route('logout')"
                                              onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Log Out') }}
+                                {{ __('admin.logout') }}
                             </x-dropdowns.dropdown-link>
                         </form>
                     </x-slot>

@@ -29,7 +29,7 @@ return [
     'show' => 'Show',
     'hide' => 'Hide',
     'poster' => 'Poster',
-    'delete_post' => 'Delete Poster',
+    'delete_poster' => 'Delete Poster',
     'trailer_id' => 'YouTube Trailer ID',
     'release_year' => 'Release Year',
     'start_date' => 'Start of viewing',

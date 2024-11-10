@@ -22,7 +22,7 @@ class MovieForm extends Component
         string $action,
         Collection|array $tags,
         ?array $movieTags = null,
-        Collection|array $casts = null,
+        Collection|array $casts = [],
         ?string $method = 'POST',
         ?Movie $movie = null)
     {
