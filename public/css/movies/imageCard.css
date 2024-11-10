@@ -1,0 +1,36 @@
+/* Загальні стилі карток */
+.poster-card, .screenshot-card {
+    width: 150px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стиль для зображення */
+.preview-image {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* Стиль для кнопки видалення */
+.delete-button {
+    background-color: #ef4444;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 8px;
+}
+
+/* Відступ між картками */
+.flex.flex-wrap {
+    gap: 16px;
+}
